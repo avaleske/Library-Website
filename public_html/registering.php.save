@@ -1,0 +1,94 @@
+<?php   session_start();
+        
+echo $_SESSION['username']."!!!!";
+        
+        ini_set('display_errors', 'On');
+        require_once 'db.php';
+        require_once 'access_control.php';
+        
+if(isset($_SESSION['username'])){ //Change this according to variable name
+
+     echo 'This';
+}
+else{
+        echo 'That';
+}
+?>
+
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title></title>
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+
+        <link rel="stylesheet" href="css/style.css">
+
+        <script src="js/libs/modernizr-2.0.min.js"></script>
+        <script src="js/libs/respond.min.js"></script>
+</head>
+<body>
+        <div id="header-container">
+                <header class="wrapper">
+                        <h1 id="title">Awesome Library of Awesomness</h1><br>
+ <nav>
+                                <ul>
+                                        <li><a href="index.php">Home</a></li>
+                                        <li><a href="search.php">Search</a></li>
+                                        <li><a href="profile.php">Profile</a></li>
+                                        <li><a href="admin.php">Admin</a></li>
+					<li><a href="profile.php">Profile</a></li>
+                                        <li><a href="register.html">Register</a></li>
+                                        <li><a href="login.php">Login</a></li>
+                                        <li><a href="logout.php">Logout</a></li>
+                                </ul>
+                        </nav>
+
+			<h2>Registration</h2>
+        </div>
+
+<div id="main" class="wrapper">
+ <h3>New User 
+Registration Form</h3> <p><font color="orangered" size="+1"><tt><b>*</b></tt></font> indicates a 
+required field</p> <form method="post" action="<?=$_SERVER['PHP_SELF']?>">  <table 
+border="0" cellpadding="0" cellspacing="5"> <tr>  <p>User ID</p> <td> <input 
+name="newid" type="text" maxlength="100" size="25" /> <font color="orangered" 
+size="+1"><tt><b>*</b></tt></font> </td> </tr> <tr>  <p>Full Name</p>  <td> 
+<input name="newname" type="text" maxlength="100" size="25" /> <font color="orangered" 
+size="+1"><tt><b>*</b></tt></font> </td> </tr> <tr>  <p>E-Mail Address</p> </td> 
+<td> <input name="newemail" type="text" maxlength="100" size="25" /> <font color="orangered" 
+size="+1"><tt><b>*</b></tt></font> </td> </tr> <tr valign="top"> <td align="right"> <p>Other 
+Notes</p> </td> <td> <textarea wrap="soft" name="newnotes" rows="5" cols="30"></textarea> </td> </tr> 
+<tr> <td align="right" colspan="2"> <hr noshade="noshade" /> <input type="reset" value="Reset Form" 
+/> <input type="submit" name="submitok" value="   OK   " /> </td> </tr> </table> </form> </div>
+
+
+        <div id="footer-container">
+                <footer class="wrapper">
+                        <h3>Site by Katherine Maack and Austin Valeske</h3>
+                </footer>
+        </div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script 
+src="js/libs/jquery-1.6.2.min.js"><\/script>')</scrip$
+
+<script src="js/script.js"></script>
+<script>
+        var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']]; // Change UA-XXXXX-X to be 
+your si$
+        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+        g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+                        
+<!--[if lt IE 7 ]>
+        <script 
+src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.2/CFInstall.min.js"></script>
+<script>window.attachEvent("onload",function(){CFInstall.check({mode:"overlay"})})</script>
+<![endif]-->
+                        
+</body>
+</html>

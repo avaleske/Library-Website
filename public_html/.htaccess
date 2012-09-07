@@ -1,0 +1,16 @@
+Action php-script /cgi-bin/cgiwrap/~valeskea/php
+AddHandler php-script .php
+#the above block tells the server to send files that end
+# in .php to the php cgi for parsing
+# PHP 5 is the default version.
+# If you'd like to use PHP 4 instead, change the php at the end to php4
+
+Action php-source /cgi-bin/cgiwrap/~valeskea/php
+AddHandler php-source .phps
+#The above block tells the php cgi to display files ending
+#in .phps as sytax-colored php code with errors indicated
+
+Action php-scriptd /cgi-bin/cgiwrapd/~valeskea/php
+AddHandler php-scriptd .phpd
+#The above block tells the server to run files through cgiwrapd
+#for additional debugging info
