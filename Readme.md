@@ -10,4 +10,4 @@ We started with the HTML5 Boilerplate and went from there. We separated the rend
 
 If I were to do this again it'd be more organized and I'd be more proactive about keeping the dependencies managable. For example, we realized we had code for rendering tables of books in one file, and wanted to use it elsewhere, so instead of pulling it into a util file we just included the original file in that page. Like I said, spaghetti.
 
-So, all that said, I'm actually still kind of proud of this. We started not knowing what we were doing - neither of us knew any PHP - and ended up with one of the better looking and most functional projects in the class.
+So, all that said, I'm actually still kind of proud of this. We started not knowing what we were doing - neither of us knew any PHP - and ended up with one of the better looking and most functional projects in the class. The code is just not at all maintainable.
